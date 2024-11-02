@@ -1,0 +1,111 @@
+/* MenuIzin.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Styling for the search input */
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-container th,
+.table-container td {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.table-container th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-container tr:nth-child(odd) {
+    background-color: #eef3f7;
+}
+
+.table-container td {
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container td:nth-child(7) {
+    font-weight: bold;
+    color: #555;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+.table-container td.status-pending {
+    color: #ffc107;
+}
+
+.table-container td.status-approved {
+    color: #28a745;
+}
+
+.table-container td.status-declined {
+    color: #dc3545;
+}
